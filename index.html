@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>DM Demo — Game UI Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="icon-btn" onclick="go('home')">‹</button>
+      <div class="brand"><span class="brand-mark">DM</span><span>DM Demo</span></div>
+      <button class="lang">🇺🇸 EN</button>
+    </header>
+
+    <main id="screen"></main>
+
+    <nav class="bottom-nav">
+      <button data-nav="home" onclick="go('home')"><span>⌂</span>Home</button>
+      <button data-nav="activity" onclick="go('activity')"><span>🎁</span>Activity</button>
+      <button class="center-btn" onclick="go('games')"><b>◎</b><small>Games</small></button>
+      <button data-nav="promo" onclick="go('promo')"><span>♟</span>Promotion</button>
+      <button data-nav="account" onclick="go('account')"><span>●</span>Account</button>
+    </nav>
+  </div>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
